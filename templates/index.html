@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mission to Mars</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="jumbotron text-center">
+      <h1>Mission to Mars</h1>
+      <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
+    </div>
+    <h2>Latest Mars News</h2>
+    <h3>{{ mars_data.news_title }}</h3>
+    <p>{{ mars_data.news_p }}</p>
+    <h2>Mars Facts</h2>
+    <h4><strong>{{ mars_data.equator }}</strong> {{ mars_data.equator2 }}</h4>
+    <h4><strong>{{ mars_data.polar }}</strong> {{ mars_data.polar2 }}</h4>
+    <h4><strong>{{ mars_data.mass }}</strong> {{ mars_data.mass2 }}</h4>
+    <h4><strong>{{ mars_data.moon }}</strong> {{ mars_data.moon2 }}</h4>
+    <h4><strong>{{ mars_data.orbitd }}</strong> {{ mars_data.orbitd2 }}</h4>
+    <h4><strong>{{ mars_data.orbitp }}</strong> {{ mars_data.orbitp2 }}</h4>
+    <h4><strong>{{ mars_data.surface }}</strong> {{ mars_data.surface2 }}</h4>
+    <h4><strong>{{ mars_data.firstrecord }}</strong> {{ mars_data.firstrecord2 }}</h4>
+    <h4><strong>{{ mars_data.recordby }}</strong> {{ mars_data.recordby2 }}</h4>
+    <h2>Featured Mars Image</h2>
+    <img src="{{ mars_data.featured_image_url }}" alt="Mars">
+
+  </div>
+  </div>
+</body>
+
+</html>
